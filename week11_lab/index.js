@@ -6,7 +6,7 @@ function init() {
     const notice = e.currentTarget.parentElement;
     notice.classList.add("dismissed");
   };
-  // loadPlotly();
+  loadPlotly();
 }
 
 function loadPlotly() {
@@ -41,6 +41,7 @@ function loadPlotly() {
           lat: lat,
           lon: lon,
           hoverinfo: "text",
+          text: hoverText,
           marker: {
             size: covidSize,
             line: {
